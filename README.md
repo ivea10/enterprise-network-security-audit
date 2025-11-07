@@ -1,2 +1,28 @@
-# enterprise-network-security-audit
-This project simulates a black-box penetration test on an enterprise network to identify vulnerabilities and evaluate security measures. It covers all major phases of ethical hacking — reconnaissance, scanning, enumeration, exploitation, and social engineering — using tools like Nmap, Hydra, Metasploit, and Nessus.
+## Python Flask SQLite
+
+This repository contains the code used for creating a Python-Flask-SQLite based environment for the cybersecurity ISMIN courses.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required dependencies
+
+##### Windows:
+```zsh
+pip install -r requirements.txt 
+```
+
+##### macOS/Linux:
+```zsh
+pip3 install -r requirements.txt
+```
+
+## Usage
+
+##### Windows:
+```zsh
+python app.py
+```
+##### macOS/Linux:
+```zsh
+python3 app.py
+```

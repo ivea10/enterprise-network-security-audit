@@ -1,0 +1,51 @@
+<!-- 
+This file is part of PyFlaSQL.
+Original author: Raphael Viera (raphael.viera@emse.fr)
+License: check the LICENSE file.
+-->
+{% extends "base.html" %}
+{% block title %}SRIE > TP4 - Gaining Access{% endblock %}
+{% block content %}
+<div class="container p-5 my-5">
+    <!-- Main Title -->
+    <h1 class="text-center">SRIE > TP4 - Gaining Access</h2>
+    <div class="container p-5 my-5 border">
+        <!-- Description -->
+        <p class="lead">
+            gaining access is the phase in penetration testing or an attack where the tester or attacker successfully exploits a vulnerability to obtain unauthorized access to a system, network, or application.
+        </p>
+    </div>
+
+    <!-- Useful tools title -->
+    <h2 class="mt-5 text-center">Useful tools used in this phase</h2>    
+
+    <div class="container p-5 my-5 border">
+        <p class="lead">
+            Below is a list of tools that can be used for this pentesting phase:
+        </p>
+        
+        <ol class="list-group">
+            <li class="list-group-item">
+                <h5><a href="{{url_for('blueprint.srie_tp4_Hydra')}}" class="list-group-item-action">Hydra</a></h5>
+                <p class="lead">
+                    Hydra (also known as THC-Hydra) is a popular open-source password-cracking tool used in cybersecurity for conducting brute force attacks or dictionary attacks on network services.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <h5><a href="{{url_for('blueprint.srie_tp4_Netcat')}}" class="list-group-item-action">Netcat</a></h5>
+                <p class="lead">
+                    Netcat (often abbreviated as nc) is a versatile networking utility that reads and writes data across network connections.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <h5><a href="{{url_for('blueprint.srie_tp4_Metasploit')}}" class="list-group-item-action">Metasploit</a></h5>
+                <p class="lead">
+                    Metasploit is a powerful, open-source penetration testing framework used by security professionals, ethical hackers, and attackers to find, exploit, and validate vulnerabilities in systems. It provides a suite of tools for conducting security assessments, performing penetration testing, and developing and executing exploits.
+                </p>
+            </li>
+        </ol>
+    </div>
+
+</div>
+{% endblock %}
+

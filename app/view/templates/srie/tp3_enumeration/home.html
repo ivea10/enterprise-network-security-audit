@@ -1,0 +1,52 @@
+<!-- 
+This file is part of PyFlaSQL.
+Original author: Raphael Viera (raphael.viera@emse.fr)
+License: check the LICENSE file.
+-->
+{% extends "base.html" %}
+{% block title %}SRIE > TP3 - Enumeration{% endblock %}
+{% block content %}
+<div class="container p-5 my-5">
+    <!-- Main Title -->
+    <h1 class="text-center">SRIE > TP3 - Enumeration</h2>
+    <div class="container p-5 my-5 border">
+        <!-- Description -->
+        <p class="lead">
+            Enumeration refers to the process of systematically identifying and gathering information about a target system, network, or application. It involves probing for specific details that can help an attacker or penetration tester understand the environment, locate vulnerabilities, and plan further actions.
+        </p>
+                
+    </div>
+
+    <!-- Useful tools title -->
+    <h2 class="mt-5 text-center">Useful tools used in this phase</h2>    
+
+    <div class="container p-5 my-5 border">
+        <p class="lead">
+            Below is a list of tools that can be used for this pentesting phase:
+        </p>
+        
+        <ol class="list-group">
+            <li class="list-group-item">
+                <h5><a href="{{url_for('blueprint.srie_tp3_Telnet')}}" class="list-group-item-action">Telnet</a></h5>
+                <p class="lead">
+                    The telnet command is a network utility used to connect to remote devices and servers over the Telnet protocol. It allows users to establish an interactive communication session, often for testing and troubleshooting network services.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <h5><a href="{{url_for('blueprint.srie_tp3_Nmap')}}" class="list-group-item-action">Nmap</a></h5>
+                <p class="lead">
+                    The nmap command, short for Network Mapper, is a powerful open-source tool used for network discovery, auditing, and security analysis. Here, it allows to detect the operating system used by the victim.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <h5><a href="{{url_for('blueprint.srie_tp3_Enum4linux')}}" class="list-group-item-action">Enum4linux</a></h5>
+                <p class="lead">
+                    enum4linux is a Linux-based tool used to gather information from Windows systems by leveraging SMB (Server Message Block) and NetBIOS protocols. Here, it allows to get a list of users.
+                </p>
+            </li>
+        </ol>
+    </div>
+
+</div>
+{% endblock %}
+
